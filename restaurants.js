@@ -6,7 +6,7 @@ $w.onReady(() => {
       navigator.geolocation.getCurrentPosition(async (position) => {
         const lat = position.coords.latitude;
         const lng = position.coords.longitude;
-        const response = await fetch(`https://yourbackend.example.com/find_restaurants?lat=${lat}&lng=${lng}`);
+        const response = await fetch(`https://google.ca?lat=${lat}&lng=${lng}`);
         const restaurants = await response.json();
         // Display the restaurants
       }, (error) => {
